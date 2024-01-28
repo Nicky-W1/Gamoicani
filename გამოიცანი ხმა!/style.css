@@ -1,0 +1,288 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #4c9ce2, #283e51);
+
+}
+
+.container {
+    width: 90%;
+    height: 90%;
+   box-shadow: -2px 2px 10px white;
+   border-radius: 10px;
+}
+
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    place-items: center;
+    margin-top: 120px;
+    gap: 20px;
+}
+
+.img-grid img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+   transition: 0.8s ease-in;
+   box-shadow: -2px 2px 10px white;
+
+}
+
+.img-grid img:hover {
+    transform: scale(1.1);
+    opacity: 80%;
+}
+
+#next {
+    position: absolute;
+    bottom: 20px;
+    left: 46%;
+    padding: 15px 25px;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    color:white;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: rgb(153, 185, 67);
+   transition: 0.8s ease;
+   display: none;
+
+}
+
+#next:hover {
+    background-color: peru;
+}
+
+
+
+#restart {
+    position: absolute;
+    bottom: 60%;
+    left: 45%;
+    padding: 15px 25px;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    color:white;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: rgb(153, 185, 67);
+   transition: 0.8s ease;
+   display: none;
+
+}
+
+
+
+#score {
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    color: white;
+    padding: 16px;
+    left: 10px;
+    top: 15px;
+    border-radius: 10px;
+    background-color: rgb(153, 185, 67);
+}
+
+.img-grid {
+    position: relative;
+}
+
+#game-over{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+ position: absolute;
+ top: 55%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ display: none;
+}
+
+#vide {
+    position: absolute;
+    top: 10px;
+    z-index: 10;
+    
+}
+
+
+#begin {
+    text-decoration: none;
+    font-size: 30px;
+    background-color: rgb(153, 185, 67);
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: -2px 2px 10px lightgray;
+    cursor: pointer;
+    outline: none;
+    transition: 0.8s ease-in-out;
+    animation: up 2s linear infinite;
+}
+
+@keyframes up {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-3px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+#begin:hover {
+    transform: scale(1.1);
+    opacity: 50%;
+}
+
+@font-face {
+    font-family: unicode;
+    src: url("./audios/3d_unicode.ttf");
+
+}
+
+.title{
+    color: rgb(153, 185, 67);
+    font-weight: bold;
+    position: absolute;
+    top: 80px;
+   font-size: 30px;
+   letter-spacing: 4px;
+   font-family: unicode;
+   box-shadow: -2px 2px 10px white;
+   border-radius: 5px;
+    background-color: white;
+   padding: 20px;
+
+}
+
+video {
+    position: absolute;
+    top: 10px;
+    border-radius: 30px;
+   
+
+}
+
+#wrong {
+    display: none;
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -100;
+
+}
+
+
+.levels i {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    transition: 1.2s ease;
+
+}
+
+.levels i:hover {
+    color: rgb(153, 185, 67);
+
+}
+
+.level-icons {
+    width: 50%;
+    height:50%;
+    position: absolute;
+    box-shadow: -2px 2px 10px white;
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    place-items: center;
+    display: none;
+
+}
+
+.hide {
+    display: grid;
+}
+
+.level-icons button {
+  background-color: rgb(153, 185, 67);
+  padding: 20px 50px;
+  border: 0;
+  outline: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.8s ease-in-out;
+}
+
+.level-icons button:hover {
+    background-color: orange;
+}
+
+.level-icons h2 {
+    margin-top: 20px;
+    text-align: center;
+    color:orange;
+    font-weight: bold;
+}
+
+#nextRound {
+   background-color: rgb(153, 185, 67);
+   color: white;
+   font-weight: bold;
+   font-size: 25px;
+   border: 0;
+   border-radius: 10px;
+   outline: none;
+   cursor: pointer;
+   position: absolute;
+   padding: 10px 20px;
+   transition: 0.7s ease-in-out;
+   top: 70%;
+   display: none;
+}
+
+#nextRound:hover {
+    background-color: orange;
+}
+
+.bar {
+   border: 0;
+   background-color: transparent;
+}

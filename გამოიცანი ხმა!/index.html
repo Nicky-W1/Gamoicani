@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+  <video id = "vide" width="420" height="120" loop>
+    <source src="./audios/Y2Mate.is - Pink audio spectrum waveform animation-7StMngiDSlQ-1080p-1654900347442.mp4" type="video/mp4">
+   
+  
+  </video>
+
+  <video id = "wrong" width="420" height="120" loop >
+    <source src="./audios/Y2Mate.is - ცოტნე ცოტაშვილი  - შენი დედა მოვტყან  Cotne Cotashvili - Sheni Deda Movtyan  ცოტნე იგინება-uBBmfkaYN3M-720p-1659712902127.mp4" type="video/mp4">
+   
+  
+  </video>
+  <audio id="sound">
+
+    <source src="./audios/mixkit-correct-answer-reward-952.wav" type="audio/mpeg">
+   
+  </audio>
+  
+  <audio id="sweep">
+
+    <source src="./audios/mixkit-fast-air-sweep-transition-168.wav" type="audio/mpeg">
+   
+  </audio>
+  
+ 
+
+  <audio id="audio1"  autoplay>
+
+    <source src="./audios/გოგი წულაია - ჩვენი დროშა ადის პატარა ბავშვის კუ...სავით, სირცხვილია.mp3" type="audio/mpeg">
+   
+  </audio>
+
+  <audio id="audio2"  >
+
+    <source src="./audios/კოხორა გალიდან.mp3">
+   
+  </audio>
+  <audio id="audio3"  >
+
+    <source src="./audios/ლევან ბერძენიშვილი ერეკლე მეფის მოღალატედ გამოცხადებას ითხოვს.mp3">
+   
+  </audio>
+
+  <audio id="audio4" >
+
+    <source src="./audios/მეგრელი ცოლს აგინებს.mp3">
+   
+  </audio>
+
+  <audio id="audio5" >
+
+    <source src="./audios/ამოყოფს თავს და მიყურებს.mp3">
+   
+  </audio>
+
+  <audio id="audio6" >
+
+    <source src="./audios/რატომ მოხვედით აქციაზე_ მიშა რომ გავათავისუფლო.mp3">
+   
+  </audio>
+
+  <audio id="audio7" >
+
+    <source src="./audios/არ მომკლა მეთქი ნინო!.mp3">
+   
+  </audio>
+  <audio id="audio8" >
+
+    <source src="./audios/ბასიანიდან რეკავს! გახსნილი აქ !.mp3">
+   
+  </audio>
+
+  <audio id="audio9" >
+
+    <source src="./audios/onlymp3.to - macivari tavshi-7Krif8L5Yl4-256k-1659538674581.mp3">
+   
+  </audio>
+
+  <audio id="audio10" >
+
+    <source src="./audios/onlymp3.to - მე უკვე გეი ვარ — გურამ ფალავანდიშვილი ამტკიცებს რომ უკვე გეია-1QnhbXCpL9M-256k-1659886842543.mp3">
+   
+  </audio>
+
+  <audio id="audio11"  >
+
+    <source src="./audios/onlymp3.to - Tom Hanks Gives You A Life Advice-X64m-TJN6lk-256k-1659615421824.mp3" type="audio/mpeg">
+   
+  </audio>
+
+  <audio id="audio12"  >
+
+    <source src="./audios/onlymp3.to - Leonardo DiCaprio  Know Your Lines  Simple. Effective. Acting Advice-UWqYHcd4dqQ-256k-1655682853687.mp3">
+   
+  </audio>
+  <audio id="audio13"  >
+
+    <source src="./audios/onlymp3.to - Meryl Streep on acting-acKace3aMaM-256k-1655682700568.mp3">
+   
+  </audio>
+
+  <audio id="audio14" >
+
+    <source src="./audios/onlymp3.to - SRK's advice to youngsters  Shah Rukh Khan-HkdAvywpcp4-256k-1655682920367.mp3">
+   
+  </audio>
+
+  <audio id="audio15" >
+
+    <source src="./audios/onlymp3.to - Julia Roberts Advice From Denzel Washington  Nightline  ABC News-geWBxf_SSoQ-256k-1655682965615.mp3">
+   
+  </audio>
+
+ 
+
+    <div class = "container">
+      <p id = "score">0</p>
+      <div class = "img-grid">
+      <img src ="" id = "img1" >
+      <img src ="" id = "img2">
+      <img src ="" id = "img3">
+      <img src ="" id = "img4">
+    </div>
+    <h2 id= "game-over"></h2>
+    <button id  = "next">შემდეგი</button>
+    <button id  = "restart">თავიდან დაწყება</button>
+    </div>
+
+
+    <button id = "nextRound">შემდეგი რაუნდი</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src ="app.js"></script>
+</body>
+</html>

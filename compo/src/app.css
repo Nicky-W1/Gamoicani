@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    
+    background-color: black;
+}
+
+.banner {
+  
+    background-image: url("https://img.freepik.com/premium-photo/generative-ai-illustration-history-secrets-illuminati-concept_666746-2757.jpg");
+   
+}
+
+.members img {
+   width: 200px;
+   height: 200px;
+   object-fit: cover;
+}
+
